@@ -1,10 +1,11 @@
+import type { ReactNode } from 'react';
 import type { Property } from '../data/properties';
 
 type PropertyCardProps = {
   property: Property;
 };
 
-function StatIcon({ children }: { children: string }) {
+function StatIcon({ children }: { children: ReactNode }) {
   return <span className="text-xs font-semibold text-slate-600">{children}</span>;
 }
 
