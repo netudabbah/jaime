@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -18,10 +18,8 @@ html {
 }
 
 body {
-  font-family: 'Manrope', system-ui, sans-serif;
-  background:
-    radial-gradient(circle at 0% 0%, rgba(217, 121, 58, 0.06), transparent 35%),
-    #fff;
+  font-family: 'Open Sans', system-ui, sans-serif;
+  background: #fff;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -41,15 +39,15 @@ body {
   }
 
   .section-title {
-    font-family: 'Archivo', 'Manrope', system-ui, sans-serif;
-    @apply text-3xl font-bold leading-tight tracking-tight text-ink-900 sm:text-4xl lg:text-5xl;
+    font-family: 'Open Sans', system-ui, sans-serif;
+    @apply text-2xl font-semibold leading-tight text-ink-900 sm:text-3xl lg:text-4xl;
   }
 
   .section-eyebrow {
-    @apply mb-3 inline-flex items-center gap-2 rounded-full border border-brand-200 bg-brand-50 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-brand-700;
+    @apply mb-2 inline-block text-xs font-semibold uppercase tracking-[0.14em] text-brand-700;
   }
 
   .surface-panel {
-    @apply rounded-2xl border border-white/70 bg-white/90 shadow-soft backdrop-blur;
+    @apply border border-slate-200 bg-white;
   }
 }

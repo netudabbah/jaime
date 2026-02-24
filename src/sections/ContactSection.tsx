@@ -10,42 +10,34 @@ export function ContactSection() {
   };
 
   return (
-    <section id="contacto" className="bg-slate-50 py-20 sm:py-24">
-      <div className="section-shell grid gap-8 lg:grid-cols-[0.95fr_1.05fr]">
-        <div className="surface-panel p-6 sm:p-8">
+    <section id="contacto" className="bg-slate-50 py-12 sm:py-14">
+      <div className="section-shell grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
+        <div className="border border-slate-200 bg-white p-5 sm:p-6">
           <span className="section-eyebrow">Contacto</span>
-          <h2 className="section-title">Hablemos sobre tu próxima operación</h2>
+          <h2 className="section-title">Contacto</h2>
           <p className="mt-4 text-sm leading-7 text-slate-600 sm:text-base">
-            Si querés vender, comprar o tasar un local, oficina, puesto en galería o inmueble
-            comercial, escribinos. Te respondemos con una propuesta clara según tu objetivo.
+            Estamos para ayudarte en la compra, venta y alquiler de propiedades con atención
+            directa.
           </p>
 
-          <div className="mt-8 space-y-5">
-            <div className="rounded-xl border border-slate-200 bg-white p-4">
-              <p className="text-xs font-semibold uppercase tracking-[0.16em] text-slate-500">
-                Dirección
-              </p>
-              <p className="mt-1 text-sm font-semibold text-ink-900">
-                Cuenca 356, Capital Federal
-              </p>
+          <dl className="mt-6 space-y-4 text-sm">
+            <div>
+              <dt className="font-semibold text-ink-900">Dirección</dt>
+              <dd className="mt-1 text-slate-700">Cuenca 356, Capital Federal</dd>
             </div>
-            <div className="rounded-xl border border-slate-200 bg-white p-4">
-              <p className="text-xs font-semibold uppercase tracking-[0.16em] text-slate-500">
-                Teléfono
-              </p>
-              <p className="mt-1 text-sm font-semibold text-ink-900">4612-4662 / 4637-0243</p>
+            <div>
+              <dt className="font-semibold text-ink-900">Teléfono</dt>
+              <dd className="mt-1 text-slate-700">4612-4662 / 4637-0243</dd>
             </div>
-            <div className="rounded-xl border border-slate-200 bg-white p-4">
-              <p className="text-xs font-semibold uppercase tracking-[0.16em] text-slate-500">
-                WhatsApp
-              </p>
-              <p className="mt-1 text-sm font-semibold text-ink-900">11-3794-2672</p>
+            <div>
+              <dt className="font-semibold text-ink-900">WhatsApp</dt>
+              <dd className="mt-1 text-slate-700">11-3794-2672</dd>
             </div>
-          </div>
+          </dl>
         </div>
 
-        <div className="surface-panel p-6 sm:p-8">
-          <h3 className="text-xl font-bold text-ink-900">Enviar consulta</h3>
+        <div className="border border-slate-200 bg-white p-5 sm:p-6">
+          <h3 className="text-lg font-semibold text-ink-900">Enviar consulta</h3>
           <p className="mt-2 text-sm text-slate-600">
             Completá el formulario y te contactamos a la brevedad.
           </p>
@@ -57,7 +49,7 @@ export function ContactSection() {
                 type="text"
                 required
                 placeholder="Tu nombre"
-                className="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm outline-none transition focus:border-brand-400 focus:ring-2 focus:ring-brand-100"
+                className="w-full border border-slate-300 bg-white px-3 py-2.5 text-sm outline-none transition-colors focus:border-brand-400"
               />
             </label>
 
@@ -68,7 +60,7 @@ export function ContactSection() {
                   type="email"
                   required
                   placeholder="nombre@email.com"
-                  className="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm outline-none transition focus:border-brand-400 focus:ring-2 focus:ring-brand-100"
+                  className="w-full border border-slate-300 bg-white px-3 py-2.5 text-sm outline-none transition-colors focus:border-brand-400"
                 />
               </label>
 
@@ -77,7 +69,7 @@ export function ContactSection() {
                 <input
                   type="tel"
                   placeholder="11-0000-0000"
-                  className="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm outline-none transition focus:border-brand-400 focus:ring-2 focus:ring-brand-100"
+                  className="w-full border border-slate-300 bg-white px-3 py-2.5 text-sm outline-none transition-colors focus:border-brand-400"
                 />
               </label>
             </div>
@@ -87,13 +79,13 @@ export function ContactSection() {
               <textarea
                 required
                 rows={5}
-                placeholder="Contanos qué tipo de local/oficina/espacio comercial buscás o qué necesitás vender/tasar."
-                className="w-full resize-y rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm outline-none transition focus:border-brand-400 focus:ring-2 focus:ring-brand-100"
+                placeholder="Escribinos tu consulta."
+                className="w-full resize-y border border-slate-300 bg-white px-3 py-2.5 text-sm outline-none transition-colors focus:border-brand-400"
               />
             </label>
 
             <div className="flex flex-col items-start gap-3 sm:flex-row sm:items-center">
-              <Button type="submit" className="min-w-44">
+              <Button type="submit" className="min-w-40">
                 Enviar consulta
               </Button>
               {submitted ? (
@@ -101,7 +93,7 @@ export function ContactSection() {
                   Consulta enviada (demo frontend). Te contactaremos pronto.
                 </p>
               ) : (
-                <p className="text-xs text-slate-500">Formulario de demostración sin backend.</p>
+                <p className="text-xs text-slate-500">Formulario de demostración.</p>
               )}
             </div>
           </form>

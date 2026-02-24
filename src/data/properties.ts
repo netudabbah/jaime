@@ -25,7 +25,7 @@ export const properties: Property[] = [
   },
   {
     id: 2,
-    title: 'Oficina comercial en edificio corporativo',
+    title: 'Oficina comercial en edificio de oficinas',
     location: 'Microcentro, CABA',
     price: 'USD 265.000',
     type: 'Oficina',
